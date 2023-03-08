@@ -4,7 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Salam Zavvar :)</title>
   </head>
-  <body></body>
+  <body>
+    <video class="video" autoplay muted loop>
+      <source src="./swing-cat.mp4" type="video/mp4" />
+    </video>
+    <h2 class="title">Salam Saeide cheturi?</h2>
+    <h4 class="title">bebin mikham nazareto raje be ye chizi bedoonam</h4>
+    <h4>dokme zir ro bezan ta behet begam :)</h4>
+    <button class="button" onclick="firstFunc()">mano mige!</button>
+    <div id="modal1" class="modal">
+      <h1 class="title">dobare ba labkhand bezan :)</h1>
+      <button class="button2" onclick="remove1()">bahse</button>
+    </div>
+    <div id="modal2" class="modal">
+      <h1 class="title">ba labkhand bishtar bezan :))</h1>
+      <button class="button2" onclick="remove2()">bahse :D</button>
+    </div>
+    <div class="modal" id="modal3">
+      <h1 class="title">khandehat... 😍</h1>
+      <h2>bebin</h2>
+      <h3 class="title">
+        man doost daram bishtar bahet vaght begzaroonam va bishtar baham bashim
+      </h3>
+      <h3>nazar to chie?</h3>
+      <div class="button-container">
+        <button onclick="are()" class="button2">are :D</button>
+        <button id="na" class="button2">na :(</button>
+      </div>
+      <video class="video" style="margin: 20px" autoplay muted loop>
+        <source src="./req-cat.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="final">
+      <h3 class="title">
+        hala chon kheyli esrar mikoni yerooz bahet miam biroon 🦦
+      </h3>
+      <h4 class="title">va inke mersi 🥰</h4>
+      <button onclick="fuck()" class="fuck">DON'T TOUCH ME!</button>
+    </div>
+    <video class="lastWeed" style="margin: 20px">
+      <source
+        src="./Y2Mate.is - Rick Astley - Never Gonna Give You Up (Official Music Video)-dQw4w9WgXcQ-480p-1654498827318.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <script>
+      let x = 1
+      const modal1 = document.getElementById("modal1")
+      const modal2 = document.getElementById("modal2")
+      const modal = document.getElementById("modal3")
+      function firstFunc() {
+        if (x === 1) modal1.classList.add("show")
+        if (x === 2) modal2.classList.add("show")
+        if (x > 2) {
+          modal.classList.add("show")
+        }
+        x++
+      }
+      const remove1 = () => {
+        modal1.classList.remove("show")
+      }
+      const remove2 = () => {
+        modal2.classList.remove("show")
+      }
+      const naButton = document.getElementById("na")
+      naButton.addEventListener("click", na)
+      function na() {
+        const naButton = document.getElementById("na")
+        naButton.style.position = "absolute"
+        naButton.style.zIndex = 85
+        naButton.style.top = Math.floor(Math.random() * 300) + "px"
+        naButton.style.right = Math.floor(Math.random() * 300) + "px"
+      }
+
+      const are = () => {
+        document.querySelector(".final").classList.add("show")
+      }
+
+      const fuck = () => {
+        document.querySelector(".lastWeed").classList.add("show")
+        document.querySelector(".lastWeed").play()
+      }
+    </script>
+  </body>
 </html>

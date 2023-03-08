@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    min-height: 100vh;
+}
+
+.title {
+    margin: 20px;
+    text-align: center;
+}
+.video {
+    max-width: 300px;
+}
+
+.lastWeed {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 999;
+    display: none;
+    background: #000;
+}
+
+.button {
+    margin-top: 18px;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: transparent;
+}
+
+.button2 {
+    margin-top: 18px;
+    padding: 16px;
+    font-size: 1.2em;
+    background-color: #fff;
+}
+.modal {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    z-index: 30;
+    display: none;
+    color: #fff;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.final {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    z-index: 130;
+    color: #000;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.show {
+    display: flex;
+}
+
+.fuck {
+    background-color:red ;
+    padding: 20px;
+    border: 0;
+    font-weight: bold;
+    color: #fff;
+}
