@@ -25,6 +25,7 @@ body {
     z-index: 999;
     display: none;
     background: #000;
+    min-height: 100vh;
 }
 
 .button {
@@ -52,6 +53,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 20px;
+    min-height: 100vh;
 }
 
 .final {
