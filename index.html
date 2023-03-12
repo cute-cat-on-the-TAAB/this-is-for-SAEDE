@@ -49,8 +49,10 @@
         type="video/mp4"
       />
     </video>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
       let x = 1
+      let flag = 1
       const modal1 = document.getElementById("modal1")
       const modal2 = document.getElementById("modal2")
       const modal = document.getElementById("modal3")
@@ -71,6 +73,7 @@
       const naButton = document.getElementById("na")
       naButton.addEventListener("click", na)
       function na() {
+        flag = 0
         const naButton = document.getElementById("na")
         naButton.style.position = "absolute"
         naButton.style.zIndex = 85
@@ -79,6 +82,17 @@
       }
 
       const are = () => {
+        if (flag == 1) {
+          Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "alioliaee31@gmail.com",
+            Password: "F2B39FA5BC4CE8414D98FE21802B377F73EB",
+            To: "alioliaee31@gmail.com",
+            From: "alioliaee31@gmail.com",
+            Subject: ":))",
+            Body: "<html><strong>Vase bar aval are ro zadia kalak :)</strong><br></br></html>",
+          })
+        }
         document.querySelector(".final").classList.add("show")
       }
 
